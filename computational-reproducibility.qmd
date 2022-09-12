@@ -1,0 +1,197 @@
+---
+format:
+  revealjs:
+      theme: default
+      controls: true
+      navigation-mode: linear
+      slide-number: true
+      multiplex: true
+---
+
+# Getting Started With Computational Reproducibility {background-color="#FFCD00"}
+
+<br>
+**Neha Moopen**
+<br>
+Research Data Management Support
+
+---
+
+<center>
+
+**<u>THESE SLIDES ARE ADAPTED FROM:</u>** <br>
+
+<br>
+
+[Best Practices in Writing Reproducible Code](https://utrechtuniversity.github.io/workshop-computational-reproducibility/) <br>
+@Utrecht University
+
+&
+
+[Intro to Reproducible Science](http://neonscience.github.io/slide-shows/intro-reprod-science.html) <br>
+@NEONScience
+
+</center>
+
+---
+
+<center>
+
+<u>**WHAT IS REPRODUCIBILITY?**</u> <br>
+
+</center>
+
+. . .
+
+_Computational reproducibility_ is when detailed information is provided about code, software, hardware and implementation details ([Victoria Stodden, 2014](http://edge.org/response-detail/25340)).
+
+![This image was created by [Scriberia](http://www.scriberia.co.uk/) for [The Turing Way](https://the-turing-way.netlify.com/) community and is used under a CC-BY licence. The image was obtained from https://zenodo.org/record/3332808.](images/reproducibility.JPG){fig-align="center"}
+
+---
+
+<center>
+
+<u>**REPRODUCIBILITY VS. REPLICABILITY**</u> <br>
+
+</center>
+
+<br>
+
+. . .
+
+[Peng (2009)](https://academic.oup.com/biostatistics/article/10/3/405/293660) provides a useful distinction:
+
+::: {.incremental}
+
+- **Reproduction** is when data sets and computer code are made available, and other researchers can verify results.
+ 
+- **Replication** is when independent investigators use methods, protocols, data, and equipment to confirm scientific claims.
+
+:::
+
+---
+
+<center>
+
+<u>**REPRODUCIBILITY SPECTRUM**</u> <br>
+
+</center>
+
+<br>
+
+![](images/reproducibility-spectrum.png){fig-align="center"}
+
+A study may be more or less reproducible than another depending on what data and code are made available ([Peng, 2011](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3383002/)).
+
+---
+
+<center>
+
+<u>**WHY IS THIS IMPORTANT?**</u> <br>
+
+</center>
+
+. . .
+
+1. To show evidence of the correctness of your results.
+ 
+2. To enable others to make use of our methods and results.
+
+. . .
+
+**The stakeholders involved:**
+
+- Collaborators
+- Peer reviewers & journal editors
+- Broad scientific community
+- The public
+
+. . .
+
+If you need more convincing, see also: **Five selfish reasons to work reproducibly** ([Florian Markowetz, 2015](http://www.genomebiology.com/2015/16/1/274))
+
+---
+
+<center>
+
+<u>**BEING REPRODUCIBLE**</u> <br>
+
+</center>
+
+![](images/bad-example.png){fig-align="center"}
+
+---
+
+<center>
+
+<u>**IS THIS ENOUGH?**</u> <br>
+
+</center>
+
+- Access to the code
+- Access to the data
+- (And let's assume we can replicate the environment)
+
+. . .
+
+How confident do you feel?
+
+![](images/bad-example-extract.png){fig-align="center"}
+
+. . .
+
+We need to do more: we need to inspire trust.
+
+---
+
+<center>
+
+<u>**INSPIRING TRUST CAN MEAN...**</u> <br>
+
+</center>
+
+. . .
+
+- The code is correct (and I have made it easy for you/someone to check);
+- My workflow is robust;
+- My workflow itself is accessible, and I will be guiding you through it.
+
+---
+
+<center>
+
+<u>**THE FOUR FACETS OF REPRODUCIBILITY**</u> <br>
+
+<br>
+
+1. Organization
+2. Documentation
+3. Automation
+4. Dissemination
+
+# Organization {background-color="#FFCD00"}
+
+---
+
+<center>
+
+<u>**ORGANIZATION**</u> <br>
+
+</center>
+
+. . .
+
+**Why do you need it?**
+
+. . .
+ 
+1. Your future self will be able to quickly find files.
+ 
+2. Colleagues will be able to more quickly understand your workflow.
+ 
+3. Machine-readable names can be quickly and easily sorted and parsed.
+
+---
+
+
+
